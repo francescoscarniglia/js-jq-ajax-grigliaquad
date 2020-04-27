@@ -36,5 +36,12 @@ body {
   justify-content: center;
   cursor: pointer;
   font-size: 22px;
+}
 
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
 }
