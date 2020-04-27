@@ -14,9 +14,9 @@ $(document).ready(function(){
       var number = risultato.response;
       if(self.text() === '0'){
         self.text(number);
-        if(number < '5'){
+        if(number <= '5'){
           self.addClass('yellow');
-        }else if(number >= '5') {
+        }else if(number > '5') {
           self.addClass('green');
         }
       }else {
