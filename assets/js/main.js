@@ -9,7 +9,17 @@ $(document).ready(function(){
   var boxes = $('.box');
 
   boxes.click(function(){
-    console.log('Hai pigiato box');
+    //console.log(apiFake);
+    $.ajax({
+      url: apiFake,
+      method: 'GET',
+      success: function(risultato){
+        console.log(risultato.response);
+      },
+      error: function(){
+        console.log('errore');
+      }
+    });
   });
 
 
